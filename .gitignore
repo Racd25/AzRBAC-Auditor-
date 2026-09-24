@@ -1,0 +1,4 @@
+# Secrets
+.env
+azrbac-report.json
+azrbac-report.html
