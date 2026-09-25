@@ -27,3 +27,14 @@ As a Cloud Security Engineer, I noticed that manual RBAC reviews were time-consu
 - **html/template** (professional HTML reports)
 
 ## Example output
+
+
+================ AUDITORÍA ================
+Resumen: 3 CRITICAL · 5 HIGH · 2 MEDIUM
+🔴 CRITICAL | Privileged role assigned
+Principal: user@contoso.com (User) | Rol: Owner | Scope: (subscription)
+→ Validate business need; prefer just-in-time via PIM and scope to resource group, not subscription.
+
+🟠 HIGH | Privileged role assigned directly to a user (should be via group)
+Principal: admin@contoso.com (User) | Rol: Owner | Scope: /resourceGroups/Production
+→ Assign the role to a security group and add the user to it; enables access reviews and PIM.
